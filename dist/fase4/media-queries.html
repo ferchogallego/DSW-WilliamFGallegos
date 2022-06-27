@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <title>SEO y Media Queries</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background: #388fd7!important;">
+        <a class="navbar-brand" href="#">FASE 4</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Temas
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">                 
+                  <a class="dropdown-item" href="./../fase3/web4.html">web 4.0</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="./../fase3/bigdata.html">Big Data</a>
+                </div>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                Recursos Multimedios
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./../fase3/wbmulti.html">web 4.0</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="./../fase3/bdmulti.html">big data</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Aprendizaje
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./media-queries.html">Media Queries CSS</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="./SEO.html">Programación SEO</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./../fase3/autor.html">Autor</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+</header>   
+<section class="slider">
+  <div class="container">
+    <div class="text-center">
+      <br><br><br><br>
+      <h2>Media Queries</h2>
+      <button class="btn btn-outline-primary btn-lg" data-toggle="modal" data-target="#staticBackdrop">Test de conocimientos</button>
+      <br><br>
+      <img src="./images/mq.jpeg" class="img-fluid" alt="">      
+    </div>
+    <div>
+      <br>
+      <h3>¿Que son las Media Queries?</h3>
+      <hr>
+      <p>
+        El núcleo de cualquier diseño web responsive son los media queries. Muchas personas nuevas al diseño web responsive no pasan la cantidad de tiempo suficiente para familiarizarse con este término. Por eso, a continuación hablaremos acerca de qué son las media queries y de su relación con un diseño responsive.
+        Las media queries permiten a las páginas web utilizar diferentes declaraciones de estilo de la hoja de estilos en base al ancho de la pantalla del dispositivo en el que se visualiza el sitio web. En los diseños web responsive, una media query es una declaración CSS que se utiliza como parámetro para saber cuándo utilizar otra declaración de estilo en base a las dimensiones del dispositivo en donde se visualiza la página web. Hay dos maneras de utilizar una media query: utilizando una hoja de estilos externa o escribiendo directamente en la hoja de estilos.
+      </p>
+      <p>
+        <b>Externo</b>
+        <br>
+        "link rel="stylesheet"; media="screen and (min-width:320px) and (max-width:480px)"; href="css/mobile.css"
+        <br>
+        <b>
+          Directo
+        </b>
+        <br>
+        "@media screen and (min-width:320px) and (max-width:480px)"
+        <br><br>
+        Estos son ejemplos de dos formas distintas de realizar declaraciones CSS que solo pueden utilizarse cuando el dispositivo se encuentra entre 320px y 480px. Una buena idea de uso para cada una de estos parámetros de declaración es utilizando estilos para móviles que puedan salirse de este rango.
+      </p>
+      <br>
+      <p>
+        <b>@ Media Screen</b>
+        <br>
+        Se utiliza para separar qué estilos se utilizan para diferentes tipos de media, en este caso el screen. Por definición, el valor screen está planeado para ser utilizado primordialmente de pantallas de computadora a color y es el valor por defecto para CSS.
+      </p>
+      <p>
+        Lo más común es que usemos las Media Queries para detectar las dimensiones de la pantalla.
+      </p>
+      <img src="./images/5.png" width="250" alt=""> 
+      <p>
+        <b>Orientación:</b>
+        <br>
+        Definir estilos en función de la orientación, lo que resulta especialmente adecuado para el diseño para móviles.
+      </p>    
+      <img src="./images/6.png" width="400" alt=""> 
+      <br><br>
+    </div>
+  </div>
+</section>
+</body>
+</html>
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Actividad Evaluativa </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p>Puedes ingresar a este test para medir cuanto aprendiste acerca de SEO.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <a href="https://www.goconqr.com/es-ES/cuestionario/37042497/media-queries?id=37042497" target="_blank" type="button"  class="btn btn-primary">Ir al TEST</a>
+          </div>
+      </div>
+    </div>
+  </div>
